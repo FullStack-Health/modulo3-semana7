@@ -5,9 +5,9 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: hello-health
+    app: hello-health #
   ports:
     - protocol: TCP
-      port: 8081
-      targetPort: 8081
+      port: 8081 # Service
+      targetPort: 8081 # Container
       nodePort: 30007
